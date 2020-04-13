@@ -39,6 +39,10 @@ header {
 .calcButton {
 
   border-radius: 30px;
+  background: black;
+  color: white;
+  border: 0;
+
 }
 
 
@@ -55,7 +59,8 @@ form input {
   margin: 1rem;
   font-size: 20px;
   border: none;
-  background: white;
+  border-radius: 20px;
+
 }
 
 
