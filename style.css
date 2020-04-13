@@ -6,20 +6,53 @@
 
 .title {
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+
+html {
+  background: linear-gradient(90deg, #FF5F6D 0%, #FFC371 100%);
 }
 
 body {
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
   margin: 10px;
+  color: black !important;
+}
+
+.boxi {
+  padding: 10px;
 }
 
 header {
   display: flex;
   justify-content: center;
+  color: black !important;
 }
 
 .container {
   display: flex;
   justify-content: space-around;
   margin: 10px;
+}
+
+.calcButton {
+  border-radius: 30px;
+}
+
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+form input,
+form button {
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  margin: 1rem;
+  font-size: 20px;
+  border: none;
+  background: white;
 }
