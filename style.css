@@ -50,8 +50,7 @@ form {
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
-form input,
-form button {
+form input {
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
   margin: 1rem;
   font-size: 20px;
@@ -65,8 +64,13 @@ form button {
     flex-wrap: wrap;
   }
 
+  .title {
+    font-size: 30px;
+  }
+
   form input,
   form button {
     width: 50%;
+    font-size: 15px;
   }
 }
