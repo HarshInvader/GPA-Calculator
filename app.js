@@ -5,11 +5,11 @@ const newPercent = document.querySelector(".percentage");
 const calcButton = document.querySelector(".calcButton");
 const addButton = document.querySelector(".addButton");
 const list = document.querySelector(".list");
-const delButton = document.querySelector(".del");
 
 addButton.addEventListener("click", addSubject);
 calcButton.addEventListener("click", calculateGPA);
-delButton.addEventListener("click", deleteEntry);
+list.addEventListener("click", deleteEntry);
+
 function addSubject(e) {
   e.preventDefault();
   const entry = document.createElement("div");
@@ -29,7 +29,7 @@ function addSubject(e) {
 
   const del = document.createElement("button");
   del.innerHTML = '<i class="fas fa-trash"></i>';
-  del.classList.add("button", "del");
+  del.classList.add("del", "button");
   entry.appendChild(del);
 
   list.appendChild(entry);
@@ -40,7 +40,19 @@ function calculateGPA(e) {
 }
 
 function deleteEntry(e) {
-  console.log(e);
+  const item = e.target;
+  if (item.classList[0] === "del") {
+    const deleteEntry = item.parentElement;
+    // remove below line when/if adding delete animation
+    deleteEntry.remove();
+
+    //uncomment below lines once animation css class is defined
+
+    // deleteEntry.classList.add("remove");
+    // deleteEntry.addEventListener("transitionend", function () {
+    //   deleteEntry.remove();
+    // });
+  }
 }
 
 function saveToLocalStorage() {}
