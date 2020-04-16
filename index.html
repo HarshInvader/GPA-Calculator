@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="bulma.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Lazy GPA</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link rel="stylesheet" href="bulma.css" /> -->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-  <link rel="stylesheet" href="./style.css" />
-  <title>Lazy GPA</title>
-</head>
+  <body>
+    <header>
+      <h1 class="title">Lazy GPA</h1>
+    </header>
+    <div class="container">
+      <form>
+        <input type="text" class="boxi subject" placeholder="Subject" />
+        <input type="text" class="boxi credits" placeholder="Credits" />
+        <input type="text" class="boxi percentage" placeholder="Percentage" />
+        <button class="button addButton" type="submit">
+          <b>Add Subject</b>
+        </button>
+      </form>
+      <div class="list">
+        <ul class="subjects">
+          Subject Name
+        </ul>
+        <ul class="credits">
+          Credits
+        </ul>
+        <ul class="Percentage">
+          Percentage
+        </ul>
+      </div>
+      <button class="button calcButton" type="submit">
+        <b>Calculate</b>
+      </button>
+    </div>
+  </body>
 
-<body>
-  <header>
-    <h1 class="title">Lazy GPA</h1>
-  </header>
-
-  <form>
-    <input type="text" class="boxi subject" placeholder="Subject" />
-
-    <input type="text" class="boxi credits" placeholder="Credits" />
-    <input type="text" class="boxi percentage" placeholder="Percentage" />
-
-    <button class="button calcButton"><b>Calculate</b></button>
-  </form>
-</body>
-
-<script src="./app.js"></script>
-
+  <script src="./app.js"></script>
 </html>
