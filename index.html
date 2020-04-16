@@ -17,26 +17,27 @@
     <header>
       <h1 class="title">Lazy GPA</h1>
     </header>
+
+    <form>
+      <input type="text" class="boxi subject" placeholder="Subject" />
+      <input type="text" class="boxi credit" placeholder="Credit" />
+      <input type="text" class="boxi percentage" placeholder="Percentage" />
+      <button class="button addButton" type="submit">
+        <b>Add Subject</b>
+      </button>
+    </form>
+
     <div class="container">
-      <form>
-        <input type="text" class="boxi subject" placeholder="Subject" />
-        <input type="text" class="boxi credits" placeholder="Credits" />
-        <input type="text" class="boxi percentage" placeholder="Percentage" />
-        <button class="button addButton" type="submit">
-          <b>Add Subject</b>
-        </button>
-      </form>
-      <div class="list">
-        <ul class="subjects">
-          Subject Name
-        </ul>
-        <ul class="credits">
-          Credits
-        </ul>
-        <ul class="Percentage">
-          Percentage
-        </ul>
-      </div>
+      <ul class="list">
+        <!-- Sample entry -->
+        <div class="entry">
+          <li>Physics</li>
+          <li>4</li>
+          <li>69</li>
+          <button>remove</button>
+        </div>
+        <!-- to be inserted using Add Subject button -->
+      </ul>
       <button class="button calcButton" type="submit">
         <b>Calculate</b>
       </button>

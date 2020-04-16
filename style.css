@@ -12,6 +12,7 @@
 
 html {
   background: linear-gradient(90deg, #ff5f6d 0%, #ffc371 100%);
+  height: auto;
 }
 
 body {
@@ -28,12 +29,6 @@ header {
   display: flex;
   justify-content: center;
   color: black !important;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
 }
 
 .button {
@@ -68,18 +63,24 @@ form input {
   align-self: center;
   width: 50%;
 }
-.list {
+
+.container {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  margin: 10px;
 }
 
-.subject {
+.list {
+  list-style: none;
+}
+
+.entry {
   margin: 0.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   transition: all 0.5s ease;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 420px) {
