@@ -83,6 +83,8 @@ form input {
 
 .entry {
   margin: 1rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
   display: flex;
   justify-content: space-between;
   align-items: left;
@@ -93,6 +95,7 @@ form input {
 
 .entry li {
   width: 230px;
+
 }
 
 .fas,
