@@ -93,6 +93,7 @@ form input {
   margin: 0.5rem;
   font-size: 20px;
   border: none;
+  outline: none;
   border-radius: 20px;
 }
 
