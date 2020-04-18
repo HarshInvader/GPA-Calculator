@@ -6,6 +6,7 @@ const calcButton = document.querySelector(".calcButton");
 const addButton = document.querySelector(".addButton");
 const list = document.querySelector(".list");
 
+document.addEventListener("DOMContentLoaded", getEntries);
 addButton.addEventListener("click", addSubject);
 calcButton.addEventListener("click", calculateGPA);
 list.addEventListener("click", deleteEntry);
@@ -27,12 +28,17 @@ function addSubject(e) {
   percent.innerText = newPercent.value;
   entry.appendChild(percent);
 
+  saveToLocalStorage([newSub.value, newCredit.value, newPercent.value]);
+
   const del = document.createElement("button");
   del.innerHTML = '<i class="fas fa-trash"></i>';
   del.classList.add("del", "button");
   entry.appendChild(del);
 
   list.appendChild(entry);
+  newSub.value = "";
+  newCredit.value = "";
+  newPercent.value = "";
 }
 
 function calculateGPA(e) {
@@ -55,4 +61,48 @@ function deleteEntry(e) {
   }
 }
 
-function saveToLocalStorage() {}
+function saveToLocalStorage(entry) {
+  let entries;
+  if (localStorage.getItem("entries") === null) {
+    entries = [];
+  } else {
+    entries = JSON.parse(localStorage.getItem("entries"));
+  }
+  entries.push(entry);
+  localStorage.setItem("entries", JSON.stringify(entries));
+}
+
+function getEntries() {
+  let entries;
+  if (localStorage.getItem("entries") === null) {
+    entries = [];
+  } else {
+    entries = JSON.parse(localStorage.getItem("entries"));
+    console.log(entries);
+  }
+  entries.forEach(function (e) {
+    const entry = document.createElement("div");
+    entry.classList.add("entry");
+
+    const subject = document.createElement("li");
+    subject.innerText = e[0];
+    entry.appendChild(subject);
+
+    const credit = document.createElement("li");
+    credit.innerText = e[1];
+    entry.appendChild(credit);
+
+    const percent = document.createElement("li");
+    percent.innerText = e[2];
+    entry.appendChild(percent);
+
+    const del = document.createElement("button");
+    del.innerHTML = '<i class="fas fa-trash"></i>';
+    del.classList.add("del", "button");
+    entry.appendChild(del);
+
+    list.appendChild(entry);
+  });
+}
+
+function delFromLocalStorage(e) {}
