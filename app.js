@@ -41,15 +41,12 @@ function addSubject(e) {
   newPercent.value = "";
 }
 
-function calculateGPA(e) {
-  e.preventDefault();
-}
-
 function deleteEntry(e) {
   const item = e.target;
   if (item.classList[0] === "del") {
     const deleteEntry = item.parentElement;
     // remove below line when/if adding delete animation
+    delFromLocalStorage(deleteEntry);
     deleteEntry.remove();
 
     //uncomment below lines once animation css class is defined
@@ -78,7 +75,6 @@ function getEntries() {
     entries = [];
   } else {
     entries = JSON.parse(localStorage.getItem("entries"));
-    console.log(entries);
   }
   entries.forEach(function (e) {
     const entry = document.createElement("div");
@@ -105,4 +101,19 @@ function getEntries() {
   });
 }
 
-function delFromLocalStorage(e) {}
+function delFromLocalStorage(del) {
+  let entries;
+  if (localStorage.getItem("entries") === null) {
+    entries = [];
+  } else {
+    entries = JSON.parse(localStorage.getItem("entries"));
+  }
+
+  const delIndex = del.children[0].innerText;
+  entries.splice(entries.indexOf(delIndex, 1));
+  localStorage.setItem("entries", JSON.stringify(entries));
+}
+
+function calculateGPA(e) {
+  e.preventDefault();
+}
