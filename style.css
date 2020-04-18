@@ -30,6 +30,16 @@ body {
   font-size: 50px;
   text-align: center;
   font-weight: bold;
+
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+
 }
 
 header {
@@ -68,7 +78,14 @@ form input {
 
 .calcButton {
   align-self: center;
-  width: 50%;
+  width: 200px;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.calcButton:hover {
+  transition: all 0.5s ease;
+  border: white 2px;
 }
 
 .container {
