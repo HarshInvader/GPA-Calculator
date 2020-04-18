@@ -128,19 +128,19 @@ form input {
 
 .entry {
   margin: 1rem;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   display: flex;
   justify-content: space-between;
   align-items: left;
   /* border: 2px dotted; */
   transition: all 0.5s ease;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .entry li {
   width: 230px;
-
 }
 
 
@@ -164,4 +164,21 @@ svg {
     width: 50%;
     font-size: 15px;
   }
+
+  .entry {
+    margin: 1rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    /* border: 2px dotted; */
+    transition: all 0.5s ease;
+    font-size: 1.2rem;
+  }
+
+  .entry li {
+    width: 230px;
+  }
+
 }
