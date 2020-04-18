@@ -6,6 +6,7 @@ const calcButton = document.querySelector(".calcButton");
 const addButton = document.querySelector(".addButton");
 const list = document.querySelector(".list");
 const result = document.querySelector(".result")
+const label = document.querySelector(".label")
 // const GPA = document.querySelector(".GPA")
 
 //Event Listeners
@@ -121,6 +122,7 @@ function delFromLocalStorage(del) {
 
 function calculateGPA(e) {
   e.preventDefault();
+  label.style.visibility = "visible";
   let entries;
   if (localStorage.getItem("entries") === null) {
     entries = [];
