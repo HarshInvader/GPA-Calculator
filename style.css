@@ -152,7 +152,7 @@ svg {
   pointer-events: none;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 920px) {
   form {
     flex-wrap: wrap;
   }
