@@ -45,8 +45,10 @@ function deleteEntry(e) {
   const item = e.target;
   if (item.classList[0] === "del") {
     const deleteEntry = item.parentElement;
-    // remove below line when/if adding delete animation
+
     delFromLocalStorage(deleteEntry);
+    // remove below line when/if adding delete animation
+
     deleteEntry.remove();
 
     //uncomment below lines once animation css class is defined
