@@ -1,3 +1,3 @@
 # GPA-Calculator
-## For College.
+For NMIMS specifically.
 
