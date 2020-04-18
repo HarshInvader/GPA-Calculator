@@ -5,7 +5,10 @@ const newPercent = document.querySelector(".percentage");
 const calcButton = document.querySelector(".calcButton");
 const addButton = document.querySelector(".addButton");
 const list = document.querySelector(".list");
+const result = document.querySelector(".result")
+// const GPA = document.querySelector(".GPA")
 
+//Event Listeners
 document.addEventListener("DOMContentLoaded", getEntries);
 addButton.addEventListener("click", addSubject);
 calcButton.addEventListener("click", calculateGPA);
@@ -179,4 +182,11 @@ function calculateGPA(e) {
 
   let finalGPA = totGPA / totCredits;
   console.log(finalGPA);
+  reso = finalGPA.toFixed(2);
+
+  result.removeChild(result.childNodes[0]);
+  const res = document.createElement("div");
+  res.innerText = reso;
+  res.classList.add("GPA");
+  result.appendChild(res);
 }

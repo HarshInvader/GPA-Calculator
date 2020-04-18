@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="bulma.css" /> -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <link rel="stylesheet" href="./style.css" />
-    <title>Lazy GPA</title>
-  </head>
 
-  <body>
-    <header>
-      <h1 class="title">Lazy GPA</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="bulma.css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <title>Lazy GPA</title>
+</head>
 
-    <form>
-      <input type="text" class="boxi subject" placeholder="Subject" />
-      <input type="text" class="boxi credit" placeholder="Credit" />
-      <input type="text" class="boxi percentage" placeholder="Percentage" />
-      <button class="button addButton" type="submit">
-        <b>Add Subject</b>
-      </button>
-    </form>
+<body>
+  <header>
+    <h1 class="title">Lazy GPA</h1>
+  </header>
 
-    <div class="container">
-      <ul class="list">
-        <!-- Sample entry -->
-        <div class="entry">
-          <li>Physics</li>
-          <li>4</li>
-          <li>69</li>
-          <button class="del button"><i class="fas fa-trash"></i></button>
-        </div>
-        <!-- to be inserted using Add Subject button -->
-      </ul>
-      <button class="button calcButton" type="submit">
-        <b>Calculate</b>
-      </button>
+  <form>
+    <input type="text" class="boxi subject" placeholder="Subject" />
+    <input type="text" class="boxi credit" placeholder="Credit" />
+    <input type="text" class="boxi percentage" placeholder="Percentage" />
+    <button class="button addButton" type="submit">
+      <b>Add Subject</b>
+    </button>
+  </form>
+
+  <div class="container">
+    <ul class="list">
+      <!-- Sample entry -->
+      <div class="entry">
+        <li>Physics</li>
+        <li>4</li>
+        <li>69</li>
+        <button class="del button"><i class="fas fa-trash"></i></button>
+      </div>
+      <!-- to be inserted using Add Subject button -->
+    </ul>
+    <button class="button calcButton" type="submit">
+      <b>Calculate</b>
+    </button>
+  </div>
+  <div class="label">
+    Your GPA is
+
+    <div class="result">
+
     </div>
-  </body>
+  </div>
+</body>
 
-  <script src="./app.js"></script>
+<script src="./app.js"></script>
+
 </html>

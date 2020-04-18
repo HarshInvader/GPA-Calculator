@@ -25,6 +25,12 @@ body {
   padding: 10px;
 }
 
+.label {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
 header {
   display: flex;
   justify-content: center;
