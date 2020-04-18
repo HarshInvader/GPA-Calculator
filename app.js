@@ -116,4 +116,65 @@ function delFromLocalStorage(del) {
 
 function calculateGPA(e) {
   e.preventDefault();
+  let entries;
+  if (localStorage.getItem("entries") === null) {
+    entries = [];
+    console.log("Error!No entries to calculate with");
+  } else {
+    entries = JSON.parse(localStorage.getItem("entries"));
+  }
+  // console.log(entries);
+  let percent, credit, GPA, point, grade;
+  let totGPA = 0,
+    totCredits = 0;
+
+  entries.forEach(function (entry) {
+    // console.log(entry);
+    credit = parseInt(entry[1]);
+    percent = parseInt(entry[2]);
+    totCredits += credit;
+    if (percent >= 85) {
+      point = 4;
+      grade = "A+";
+    } else if (percent >= 81) {
+      point = 3.75;
+      grade = "A";
+    } else if (percent >= 77) {
+      point = 3.5;
+      grade = "A-";
+    } else if (percent >= 73) {
+      point = 3.25;
+      grade = "B+";
+    } else if (percent >= 69) {
+      point = 3;
+      grade = "B";
+    } else if (percent >= 65) {
+      point = 2.75;
+      grade = "B-";
+    } else if (percent >= 61) {
+      point = 2.5;
+      grade = "C+";
+    } else if (percent >= 57) {
+      point = 2.25;
+      grade = "C";
+    } else if (percent >= 50) {
+      point = 2;
+      grade = "C-";
+    } else if (percent >= 40) {
+      point = 1.5;
+      grade = "D";
+    } else if (percent < 40) {
+      point = 2;
+      grade = "F";
+    }
+    GPA = credit * point;
+    totGPA += GPA;
+    console.log(GPA);
+  });
+
+  console.log(totCredits);
+  console.log(totGPA);
+
+  let finalGPA = totGPA / totCredits;
+  console.log(finalGPA);
 }
