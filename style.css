@@ -156,6 +156,10 @@ svg {
   pointer-events: none;
 }
 
+.fa-percentage {
+  font-size: 60px;
+}
+
 @media (max-width: 920px) {
   form {
     flex-wrap: wrap;
@@ -163,6 +167,10 @@ svg {
 
   .title {
     font-size: 60px;
+  }
+
+  .fa-percentage {
+    font-size: 40px;
   }
 
   form input,
