@@ -5,8 +5,8 @@ const newPercent = document.querySelector(".percentage");
 const calcButton = document.querySelector(".calcButton");
 const addButton = document.querySelector(".addButton");
 const list = document.querySelector(".list");
-const result = document.querySelector(".result")
-const label = document.querySelector(".label")
+const result = document.querySelector(".result");
+const label = document.querySelector(".label");
 // const GPA = document.querySelector(".GPA")
 
 //Event Listeners
