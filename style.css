@@ -31,6 +31,16 @@ body {
   color: black !important;
 }
 
+.clearStorage {
+  background-color: black;
+  border: 0px;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  padding: 8px;
+  color: #ecf0f1;
+  cursor: pointer;
+}
+
 .wrapper {
   min-height: 94vh;
 }
