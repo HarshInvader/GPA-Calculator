@@ -1,57 +1,114 @@
 {
-	"dir": "ltr",
-	"lang": "English",
-	"name": "Lazy GPA",
-	"scope": "/GPA-Calculator/",
-	"display": "browser",
-	"start_url": "https://harshinvader.github.io/GPA-Calculator/",
-	"short_name": "Lazy GPA",
-	"theme_color": "transparent",
-	"description": "Calculate your NMIMS Semester GPA.",
-	"orientation": "any",
-	"background_color": "transparent",
-	"related_applications": [],
-	"prefer_related_applications": false,
-	"icons": [{
-			"src": "icons/icon-72x72.png",
-			"sizes": "72x72",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/icon-96x96.png",
-			"sizes": "96x96",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/icon-128x128.png",
-			"sizes": "128x128",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/icon-144x144.png",
-			"sizes": "144x144",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/icon-152x152.png",
-			"sizes": "152x152",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/icon-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/icon-384x384.png",
-			"sizes": "384x384",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/icon-512x512.png",
-			"sizes": "512x512",
-			"type": "image/png"
-		}
-	],
-	"screenshots": []
+    "dir": "ltr",
+    "lang": "English",
+    "name": "Lazy GPA",
+    "scope": "/GPA-Calculator/",
+    "display": "standalone",
+    "start_url": "https://harshinvader.github.io/GPA-Calculator/",
+    "short_name": "Lazy GPA",
+    "theme_color": "transparent",
+    "description": "Calculate your NMIMS GPA for the semester.",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/4e9284ea-8fb1-5f98-1638-1921124736e3.webPlatform.png",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/82d8079d-11f7-288e-1dac-1ac9aa5f3792.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ddce4c3b-4280-cafc-a3fd-37a41fa1d4ea.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/de860f67-4b7d-9db1-f3c2-2b5872c73e20.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/96128792-d8ec-6428-9347-033dedf950da.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/dc227fe0-19d4-5c2d-9ec3-7c4b5253c2d8.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/91aac4e3-6759-5456-39c4-96a7efabf699.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/27088319-645b-2758-938c-7de31f2f9802.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/bf687ebe-35f2-9927-acdd-223a1e43fa99.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/72a25382-2b7a-5514-da1f-0e89b69f7b4d.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/d501a2ec-7f26-3449-4328-16e4703f7af1.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/f8e48f64-995c-ac3c-e268-933d73fef486.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/7a455c51-ac31-e167-5c8b-b1d2f3b77edc.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ff97ef58-0e79-f884-7012-8b82484a2e2c.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/82f25cbd-4d9c-f90e-45eb-dccd5fe1eb18.webPlatform.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/15389859-2599-ede9-5742-62f45f6501d7.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/01730995-6f19-ac9e-926b-e00a737de92c.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/31c11f1f-c02c-122f-6a87-30acf6e7055d.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/e0f94c30-fd63-e94e-f608-2d176c768e19.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ],
+    "url": "https://harshinvader.github.io/GPA-Calculator/",
+    "screenshots": []
 }
