@@ -1,89 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="bulma.css" /> -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <link rel="icon" type="image/ico" href="favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="stylesheet" href="./style.css" />
 
-    <title>Lazy GPA</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./style.css" />
 
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="title">
-          <a href="https://harshinvader.github.io/GPA-Calculator/"
-            ><i class="fas fa-percentage"></i>
+  <title>Lazy GPA</title>
+</head>
 
-            Lazy GPA</a
-          >
-        </h1>
-      </header>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="title">
+        <a href="https://harshinvader.github.io/GPA-Calculator/"><i class="fas fa-percentage"></i>
 
-      <form>
-        <input type="text" class="boxi subject" placeholder="Subject Name" />
-        <input
-          type="number"
-          pattern="[0-9]*"
-          inputmode="numeric"
-          class="boxi credit"
-          placeholder="Credits of Subject"
-          required
-        />
-        <input
-          required
-          type="number"
-          pattern="[0-9]*"
-          inputmode="numeric"
-          class="boxi percentage"
-          placeholder="Marks Out of 100 "
-          required
-        />
-        <button class="button addButton" type="submit">
-          <i class="fas fa-plus-circle"></i><b> Add Subject</b>
-        </button>
-      </form>
+          Lazy GPA</a>
+      </h1>
+    </header>
 
-      <div class="container">
-        <ul class="list"></ul>
-        <button class="button calcButton" type="submit">
-          <i class="fas fa-calculator"></i><b> &nbsp;Calculate GPA</b>
-        </button>
-      </div>
+    <form>
+      <input type="text" class="boxi subject" placeholder="Subject Name" />
+      <input type="number" pattern="[0-9]*" inputmode="numeric" class="boxi credit" placeholder="Credits of Subject"
+        required />
+      <input required type="number" pattern="[0-9]*" inputmode="numeric" class="boxi percentage"
+        placeholder="Marks Out of 100 " required />
+      <button class="button addButton" type="submit">
+        <i class="fas fa-plus-circle"></i><b> Add Subject</b>
+      </button>
+    </form>
 
-      <div class="label">
-        Your GPA is
-        <div class="result"></div>
-      </div>
-    </div>
-
-    <div class="footer">
-      <br /><b
-        >Make sure you add at least 1 subject before pressing the calculate
-        button and not leave any empty fields.</b
-      >
-      <br /><br />
-      Developed by Shivanshu and Sriharsha from and for NMIMS.
-      <a href="https://github.com/HarshInvader/GPA-Calculator"
-        >View code on <i class="fab fa-github"></i></a
-      ><br /><br />
-      <button
-        class="clearStorage"
-        onclick="localStorage.clear(); window.location.reload();"
-      >
-        <i class="fas fa-exclamation-circle"></i> &nbsp;In case of errors, click
-        here to reset local storage and values.
+    <div class="container">
+      <ul class="list"></ul>
+      <button class="button calcButton" type="submit">
+        <i class="fas fa-calculator"></i><b> &nbsp;Calculate GPA</b>
       </button>
     </div>
-  </body>
 
-  <script src="./app.js"></script>
+    <div class="label">
+      Your GPA is
+      <div class="result"> </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <br /><b>Make sure you add at least 1 subject before pressing the calculate
+      button and not leave any empty fields.</b>
+    <br /><br />
+    Developed by Shivanshu and Sriharsha from and for NMIMS.
+    <a href="https://github.com/HarshInvader/GPA-Calculator">View code on <i class="fab fa-github"></i></a><br /><br />
+    <button class="clearStorage" onclick="localStorage.clear(); window.location.reload();">
+      <i class="fas fa-exclamation-circle"></i> &nbsp;In case of errors, click
+      here to reset local storage and values.
+    </button>
+  </div>
+</body>
+
+<script src="./app.js"></script>
+
 </html>
